@@ -1,0 +1,25 @@
+/* src/styles/variables.css */
+
+:root {
+  --alt-bg-color: #0000004d;
+  --font-color: #ffffff;
+  --alt-font-color: #222222;
+  --primary-color: #607d8b; /* Blue-grey */
+  --secondary-color: #93B5C6; /* Lighter blue-grey */
+  --primary-color-rgb: 96, 125, 139;
+  --primary-hover-color: #455a64;
+  --danger-color: #ba0f30; /* Red for delete */
+  --success-color: #28a745; /* Green for success */
+}
+
+/* Dark theme variables (if you have them, otherwise remove this block) */
+.dark {
+  --bg-color: #003950;
+  --alt-bg-color: #0000004d;
+  --font-color: #ffffff;
+  --alt-font-color: #222222;
+  --primary-color: #008e9f;
+  --secondary-color: #00e4ff;
+  --primary-color-rgb: 0, 142, 159;
+  --primary-hover-color: #006b77;
+}

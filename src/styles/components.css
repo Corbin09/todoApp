@@ -1,0 +1,146 @@
+/* src/styles/components.css */
+
+.color-container {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  gap: 12px;
+  z-index: 1000;
+  transform: translateX(-50%);
+}
+
+.color-option {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #e0e0e0;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.color-option:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+}
+.color-option:active {
+  transform: scale(0.95);
+}
+
+.tasks-wrapper {
+  list-style: none;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--font-color);
+  max-height: 400px;
+  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  .tasks-wrapper {
+    padding: 0 5px;
+    gap: 10px;
+  }
+}
+
+.task {
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  transition: all 0.5s ease;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.task-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.task-content p {
+  margin: 0;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+.task-time {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 5px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.task button {
+  background-color: transparent;
+  color: var(--font-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+.task button:hover {
+  color: var(--primary-color);
+  background-color: var(--font-color);
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.tasks-wrapper .task-done {
+  opacity: 0.5;
+}
+.tasks-wrapper .task-done p {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.tasks-wrapper .task-overdue {
+  background-color: #d9534f; /* A slightly darker red */
+  opacity: 0.9;
+}
+
+.tasks-wrapper .task-overdue p,
+.tasks-wrapper .task-overdue .task-time {
+  text-decoration: line-through;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive adjustments for task items */
+@media (max-width: 768px) {
+  .task {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .task-content {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .task-actions {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,61 @@
+.app-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.main-title {
+    color: var(--font-color);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.add-task-btn-main {
+    background-color: var(--secondary-color);
+    color: var(--alt-font-color);
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-task-btn-main:hover {
+    background-color: #7AA1B7;
+    transform: translateY(-2px);
+    opacity: 1;
+}
+
+.filter {
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.filter button.active {
+  background-color: var(--secondary-color);
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    margin-bottom: 20px;
+  }
+  .main-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .add-task-btn-main {
+    width: 90%;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .filter {
+      flex-direction: column;
+      width: 100%;
+  }
+}
