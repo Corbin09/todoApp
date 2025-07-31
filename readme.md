@@ -23,9 +23,13 @@ Clone the repository and install dependencies:
 Bash
 
 git clone https://github.com/your-username/your-repo-name.git
+
 cd your-repo-name
+
 npm install
+
 2. Firebase Setup
+3. 
 Create a new project in the Firebase Console.
 
 Enable Firestore Database and Authentication.
@@ -48,9 +52,11 @@ Start the development server:
 Bash
 
 npm start
+
 The app will open automatically in your browser.
 
 🎬 Demo
+
 Here is a quick video demonstrating the app's key features.
 
 <video width="100%" controls>
