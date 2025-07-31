@@ -1,62 +1,38 @@
-Here is the full README.md file in English, updated to include the video demo.webm from your /videos folder.
+Todo List App
+A simple and effective personal task manager built with React and Firebase.
 
-You can copy and paste this content directly into your README.md file.
+✨ Features
+Secure Authentication: Log in or register to save and manage your personal tasks.
 
-README.md
-Todo List Application - A Personal Task Manager
-This Todo List application is a powerful personal task management tool designed to help you organize your daily tasks efficiently. With its intuitive interface and flexible features, you can easily add, edit, sort, and track your work.
+Drag & Drop: Easily reorder tasks by dragging them into place.
 
-✨ Key Features
-User Authentication: Secure user authentication powered by Firebase, allowing you to manage your personal task list.
+Task Management: Add new tasks with due dates, mark them as complete, edit details, or delete them.
 
-Add New Tasks: Easily create new tasks with a name, start date, and due date.
+Customization: Personalize your tasks with different colors.
 
-Drag & Drop: Reorder your tasks effortlessly using a flexible drag-and-drop interface.
+Overdue Alerts: Tasks past their due date are clearly marked.
 
-Mark as Complete: Check off tasks to mark them as completed and track your progress.
+Data Synchronization: Your data is saved to Firebase and synced across all your devices.
 
-Task Filtering: Filter tasks by their status (Completed, Uncompleted, All).
+🚀 Get Started
+Follow these steps to get the project running on your local machine.
 
-Customizable Colors: Personalize your tasks by assigning colors to help you categorize and organize your work visually.
-
-Edit & Delete: Edit task details or remove tasks that are no longer needed.
-
-Overdue Notifications: Visual indicators alert you when tasks are past their due date.
-
-Clear All: Quickly clear your entire task list with a single click.
-
-Cloud Storage: Data is securely stored in Firebase Firestore, ensuring it's safe and synchronized across all your devices.
-
-🚀 Installation & Setup
-This guide will walk you through the process of setting up and running the application on your local machine.
-
-1. Prerequisites
-Node.js (version 14 or later)
-
-npm (comes bundled with Node.js)
-
-A Firebase account to configure the database and authentication.
-
-2. Project Setup
-Clone the repository to your local machine:
+1. Installation
+Clone the repository and install dependencies:
 
 Bash
 
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-Install the required dependencies:
-
-Bash
-
 npm install
-3. Firebase Configuration
-Go to the Firebase Console and create a new project.
+2. Firebase Setup
+Create a new project in the Firebase Console.
 
-Set up Firestore Database and Authentication.
+Enable Firestore Database and Authentication.
 
-In your Project Settings, find the "Firebase SDK snippet" and select "Config" to get your configuration details.
+Go to your Project Settings to find your Firebase config keys.
 
-Create a new file named .env in the root directory of your project and add the following configuration:
+Create a .env file in your project's root directory and add your keys:
 
 Đoạn mã
 
@@ -66,24 +42,20 @@ REACT_APP_FIREBASE_PROJECT_ID=your_project_id
 REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_Messaginger_id
 REACT_APP_FIREBASE_APP_ID=your_app_id
-4. Running the Application
-Use the following command to start the application in development mode:
+3. Run the App
+Start the development server:
 
 Bash
 
 npm start
-The application will automatically open in your browser at http://localhost:3000.
+The app will open automatically in your browser.
 
-🎬 Video Demonstration
-Watch this short video to see the app in action.
-
-Embedding the Local Video
-Here is a short demo video showcasing the key features of the application.
-
-HTML
+🎬 Demo
+Here is a quick video demonstrating the app's key features.
 
 <video width="100%" controls>
-  <source src="./videos/demo.webm" type="video/webm">
-  Your browser does not support the video tag.
+<source src="./videos/demo.webm" type="video/webm">
 </video>
-If you have any questions or would like to contribute, feel free to open an issue on GitHub. Happy task managing!
+
+🤝 Contribution
+Feel free to open issues or submit pull requests.
