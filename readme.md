@@ -29,7 +29,7 @@ cd your-repo-name
 npm install
 
 2. Firebase Setup
-3. 
+
 Create a new project in the Firebase Console.
 
 Enable Firestore Database and Authentication.
@@ -46,6 +46,7 @@ REACT_APP_FIREBASE_PROJECT_ID=your_project_id
 REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_Messaginger_id
 REACT_APP_FIREBASE_APP_ID=your_app_id
+
 3. Run the App
 Start the development server:
 
